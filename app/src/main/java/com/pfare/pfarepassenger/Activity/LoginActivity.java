@@ -25,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //initialising textview
+
         textViewSignUp = (TextView)findViewById(R.id.textview_signup);
         textViewForgotPassword = (TextView)findViewById(R.id.textview_forgot_password);
 
