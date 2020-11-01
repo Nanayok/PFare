@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    xmlns:attv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.pfare.pfarepassenger.Activity.SplashActivity">
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="Welcome"-->
+        <!--android:textSize="25sp"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        >
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="Welcome"-->
+        <!--android:textSize="25sp"/>-->
+
+        <me.wangyuwei.particleview.ParticleView
+            android:id="@+id/particle_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            pv:pv_background_color="@color/colorPrimary"
+            pv:pv_host_text="PFare"
+            pv:pv_particle_text="Passenger"
+            pv:pv_particle_text_size="30sp"
+            pv:pv_text_color="#FFF"
+            android:layout_centerInParent="true"
+            />
+
+        <!--<com.dragankrstic.autotypetextview.AutoTypeTextView-->
+            <!--android:id="@+id/lblTextWithoutMistakes"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:textColor="#FFF"-->
+            <!--android:textSize="16sp"-->
+            <!--attv:animateTextTypeWithoutMistakes="..reliable payments"-->
+            <!--attv:typingSpeed = "200"-->
+            <!--android:layout_marginBottom="220dp"-->
+            <!--android:layout_centerHorizontal="true"/>-->
+
+        <!--android:textSize="20sp"-->
+        <!--android:layout_alignParentBottom="true"-->
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

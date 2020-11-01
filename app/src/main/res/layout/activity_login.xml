@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.pfare.pfarepassenger.Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/textview_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/textview_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_below="@+id/textview_login"
+            android:layout_marginTop="100dp"/>
+
+        <EditText
+            android:id="@+id/edittext_email_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textview_email"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/textview_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/edittext_email_phonenumber"
+            android:text="Password"/>
+
+        <TextView
+            android:id="@+id/textview_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_below="@+id/edittext_email_phonenumber"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textview_password"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edittext_password"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_background"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dont have an account?"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textview_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

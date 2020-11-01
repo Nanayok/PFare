@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.pfare.pfarepassenger.Activity.SignUpActivity">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/toolbarParent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:gravity="start"-->
+            <!--app:titleTextColor="@color/white"-->
+            <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+            <!--/>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+
+        <TextView
+            android:id="@+id/textview_continue_with_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue With Phone"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textview_we_will_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We will send One Time Password"
+            android:gravity="center"
+            android:layout_below="@+id/textview_continue_with_phone"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textview_on_this_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On this phone number"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_below="@+id/textview_we_will_send"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/textview_on_this_phone"
+            >
+
+            <!--android:layout_centerInParent="true"-->
+
+
+
+            <!--app:ccp_defaultNameCode="US"-->
+            <com.rilixtech.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:ccp_defaultNameCode="GH"/>
+
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:digits="0123456789"
+                android:drawablePadding="10dp"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:maxLength="10" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/terms1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearlayout"
+            android:text="@string/terms_and_conditions1"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/terms1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview_terms_and_conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_terms_and_conditions"
+                android:textColor="@color/black"
+                />
+            <!--android:textSize="18sp"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_and"
+                android:paddingLeft="8dp"
+
+                />
+
+            <TextView
+                android:id="@+id/textview_privacy_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_privacy_policy"
+                android:paddingLeft="8dp"
+                android:textColor="@color/black"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/button_verify_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/linear_layout_terms"
+            android:background="@drawable/button_background"
+            android:text="Send OTP"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

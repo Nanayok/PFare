@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "210760021135",
+    "firebase_url": "https://pfarepassenger.firebaseio.com",
+    "project_id": "pfarepassenger",
+    "storage_bucket": "pfarepassenger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210760021135:android:2ab2b94f825ec56245acfa",
+        "android_client_info": {
+          "package_name": "com.pfare.pfarepassenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210760021135-ujf0gsv6end11bhli5bvifp6arouo024.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pfare.pfarepassenger",
+            "certificate_hash": "75232ab112e5bf635c84a0b6dc630a14ccd2178c"
+          }
+        },
+        {
+          "client_id": "210760021135-140k2hstrofots7m53d60bc31n62bupt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoc5TAZNvXd3So_4nCtX_M_v-iBWSyhUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210760021135-140k2hstrofots7m53d60bc31n62bupt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
