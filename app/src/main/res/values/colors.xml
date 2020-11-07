@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--<color name="colorPrimary">#3F51B5</color>-->
-    <color name="colorPrimary">#0D84DA</color>
+    <color name="colorPrimary">#2d84ff</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="light_grey">#F7F8FA</color>
+
+    <color name="dashboard_background">#f6f7fb</color>
+    <color name="light_blue">#badfff</color>
+    <color name="semi_light_blue">#5eb8ff</color>
 </resources>

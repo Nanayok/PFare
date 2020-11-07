@@ -29,6 +29,10 @@
         <activity android:name=".Activity.ShuttleActivity" />
         <activity android:name=".Activity.CommuterActivity" />
         <activity android:name=".Activity.MikroletActivity"></activity>
+
+        <activity android:name="com.cooltechworks.creditcarddesign.CardEditActivity"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>

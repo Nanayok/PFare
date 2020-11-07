@@ -234,20 +234,29 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_below="@+id/linearlayout4"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.3"
                     android:text="Departure"/>
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="Arrived"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.3"
                     />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Car Number"
+                    android:layout_weight="0.4"
+                    />
+
+
 
 
             </LinearLayout>
@@ -264,7 +273,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.3"
                     android:text="9:00am"
                     android:textColor="@color/black"
                     />
@@ -273,13 +282,24 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="1:00pm"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.3"
+                    android:textColor="@color/black"
+
+                    />
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="GR1100-20"
+                    android:layout_weight="0.4"
                     android:textColor="@color/black"
 
                     />
 
 
             </LinearLayout>
+
 
             <ImageView
                 android:layout_width="match_parent"
@@ -297,6 +317,7 @@
 
 
         <Button
+            android:id="@+id/button_pay_fare"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/relativelayout2"
